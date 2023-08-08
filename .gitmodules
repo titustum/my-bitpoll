@@ -1,3 +1,0 @@
-[submodule "django-simple-csp"]
-	path = django-simple-csp
-	url = https://github.com/fsinfuhh/django-simple-csp

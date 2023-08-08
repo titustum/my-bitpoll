@@ -40,7 +40,7 @@ STATIC_ROOT = os.path.join(ROOT_DIR, '_static')
 # Example: "http://example.com/static/", "http://static.example.com/"
 STATIC_URL = '/static/'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 TEMPLATE_ALLOWABLE_SETTINGS_VALUES = [
     'ALLOW_CUSTOM_SLUGS',
@@ -393,6 +393,9 @@ MARKDOWNIFY = {
 URL_PREFIX = ''
 
 ANTI_SPAM_CHALLENGE_TTL = 60 * 60 * 24 * 7  # Defaults to 7 days
+
+
+WSGI_APPLICATION = 'vercel_app.wsgi.app'
 
 from .settings_local import *
 

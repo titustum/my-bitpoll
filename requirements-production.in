@@ -1,4 +1,0 @@
-sentry-sdk
-django-auth-ldap
-uwsgi
-psycopg2-binary
