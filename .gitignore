@@ -8,6 +8,6 @@ db.sqlite3
 **.swp
 .pyenv
 *.mo
-bitpoll/settings_local.py
+#bitpoll/settings_local.py
 run
 venv
