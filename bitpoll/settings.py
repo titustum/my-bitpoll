@@ -395,9 +395,9 @@ URL_PREFIX = ''
 ANTI_SPAM_CHALLENGE_TTL = 60 * 60 * 24 * 7  # Defaults to 7 days
 
 
-WSGI_APPLICATION = 'vercel_app.wsgi.app'
-
 from .settings_local import *
 
 INSTALLED_APPS += INSTALLED_APPS_LOCAL
 PIPELINE.update(PIPELINE_LOCAL)
+
+WSGI_APPLICATION = 'vercel_app.wsgi.app'
