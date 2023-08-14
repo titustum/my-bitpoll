@@ -1,11 +1,23 @@
 {
+  "version": 1.0,
     "builds": [
       {
         "src": "bitpoll/wsgi.py",
         "use": "@vercel/python"
+      },
+      {
+        "src": "build_files.sh",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "staticfiles_build"
+        }
       }
     ],
     "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "bitpoll/wsgi.py"
+      },
       {
         "src": "/(.*)",
         "dest": "bitpoll/wsgi.py"
